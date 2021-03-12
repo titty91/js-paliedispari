@@ -5,6 +5,46 @@
     <title></title>
   </head>
   <body>
+    <h1 id="titolo">ciao mondo</h1>
+<script>
+//1) Una funzione per capire se la parola è
+//palindroma
+//2) L'utente sceglie pari o dispari e un numero
+//da 1 a 5.
+//Generiamo un numero random (sempre da 1
+//a 5) per il computer.
+//Sommiamo i due numeri e dichiariamo chi ha
+//vinto.
 
+//1
+//function findPalindrome(string) {
+//    let cleanChar = string.replace(/[^A-Z0-9]/ig, "").toLowerCase();
+//    let reversedChar = cleanChar.split('').reverse().join('');
+//    return (cleanChar === reversedChar)
+//}
+// var parola = findPalindrome(string);
+// console.log(parola)
+
+
+//2)
+//L'utente sceglie pari o dispari e un numeroda 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer.
+ //var scelta = prompt('pari o dispari?');
+ var number = prompt('numeroda 1 a 5');
+ var numberPc = Math.floor(Math.random()*5)+1;
+
+if (number>numberPc) {
+  document.getElementById('titolo').innerHTML ='Hai vinto';
+  var pari = number>numberPc;
+  console.log(pari, numberPc +' vinto')
+}else{
+  document.getElementById('titolo').innerHTML='Hai perso';
+  var dispari = number<numberPc;
+  console.log(dispari + ' perso')
+}
+
+Sommiamo i due numeri e dichiariamo chi ha
+//vinto.
+
+</script>
   </body>
 </html>

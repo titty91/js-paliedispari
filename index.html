@@ -29,7 +29,7 @@
 //2)
 //L'utente sceglie pari o dispari e un numeroda 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer.
 var choiceUt = prompt('pari o dispari');
-var choice = ['pari','dispari'];
+var choices = ['pari','dispari'];
  var numberUt = parseInt(prompt('scrivi un numero da 1 a 5'));
  //var numePair = (%2==0);
  //var numeOdd = (%2==1);
@@ -49,17 +49,14 @@ for (var i = 0; i < 1; i++) {
   console.log(numberUt,nmbPc,sum);
   if(sum %2==0){
     console.log(sum, ' pair');
+    document.getElementById('titolo').innerHTML = 'vince pari';
+
   }else{
     console.log(sum, ' odd');
+    document.getElementById('titolo').innerHTML = 'vince dispari';
   }
 }
 
-if([pari]){
-  sum = sum%2==0;
-  console.log();
-}else{
-  sum = sum%2==1;
-}
 
 </script>
   </body>

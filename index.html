@@ -29,10 +29,8 @@
 //2)
 //L'utente sceglie pari o dispari e un numeroda 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer.
 var choiceUt = prompt('pari o dispari');
-var choices = ['pari','dispari'];
- var numberUt = parseInt(prompt('scrivi un numero da 1 a 5'));
- //var numePair = (%2==0);
- //var numeOdd = (%2==1);
+//var choices = ['pari','dispari'];
+var numberUt = parseInt(prompt('scrivi un numero da 1 a 5'));
 
  function numberPc(min, max){
   var min = 1;
@@ -42,7 +40,6 @@ var choices = ['pari','dispari'];
 }
 
 var nmbPc = numberPc(1, 5);
-//console.log(nmbPc);
 
 for (var i = 0; i < 1; i++) {
   var sum = numberUt+nmbPc;

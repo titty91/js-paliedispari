@@ -17,42 +17,55 @@
 //vinto.
 
 //1
-//function findPalindrome(string) {
-//    let cleanChar = string.replace(/[^A-Z0-9]/ig, "").toLowerCase();
-//    let reversedChar = cleanChar.split('').reverse().join('');
-//    return (cleanChar === reversedChar)
-//}
-// var parola = findPalindrome(string);
-// console.log(parola)
+
+function palindromaWord(){
+  var wordUtf = wordUt;
+  console.log(wordUtf);
+  var wordSplit = wordUtf.split(''); //con split: da un unica stringa i caratteri si separano e diventantano tante stringhe es.: anna -> 'a', 'n', 'n', 'a'
+  var wordReverse = wordSplit.reverse('') //inverti l'ordine degli array es.: 'b','a','n','g' --> 'g','n','a','b';
+  var wordJoin = wordReverse.join(''); // gli elementi tornato in un unica stringa
+
+  if(wordUtf == wordJoin){
+    document.getElementById('titolo')
+    titolo.innerHTML = 'la parola '+ wordUtf +' è palindroma';
+    console.log('la parola è palindroma');
+  }else{
+    document.getElementById('titolo')
+    titolo.innerHTML = 'la parola '+ wordUtf +' non è palindroma';
+    console.log('la parola non è palindroma');
+  }
+}
+
+palindromaWord(wordUt = prompt('dimmi una parola e vediamo se è palindroma:'));
 
 
 //2)
 //L'utente sceglie pari o dispari e un numeroda 1 a 5. Generiamo un numero random (sempre da 1 a 5) per il computer.
- var choiceUt = prompt('pari o dispari');
- var numberUt = parseInt(prompt('dimmi un numero da 1 a 5'));
-
- function numberPc(min, max){
-  var min = 1;
-  var max = 5 - min +1;
-  var rnd = Math.floor(Math.random()*max) +min;
-  return rnd;
- }
- var nmbPc = numberPc(1, 5);
-
-  var sum = numberUt+nmbPc;
-  console.log(numberUt,nmbPc,sum);
-  var sumEnd = sum % 2 == 0;
-
- if((choiceUt == 'pari' && sumEnd ) || (choiceUt == 'dispari' && !sumEnd)){
-   document.getElementById('titolo')
-   titolo.innerHTML = 'hai vinto';
-  console.log('hai vinto');
- }else{
-   document.getElementById('titolo')
-   titolo.innerHTML = 'hai perso';
-  console.log('hai perso');
- }
- console.log(sum);
+     // var choiceUt = prompt('pari o dispari');
+     // var numberUt = parseInt(prompt('dimmi un numero da 1 a 5'));
+     //
+     // function numberPc(min, max){
+     //  var min = 1;
+     //  var max = 5 - min +1;
+     //  var rnd = Math.floor(Math.random()*max) +min;
+     //  return rnd;
+     // }
+     // var nmbPc = numberPc(1, 5);
+     //
+     //  var sum = numberUt+nmbPc;
+     //  console.log(numberUt,nmbPc,sum);
+     //  var sumEnd = sum % 2 == 0;
+     //
+     // if((choiceUt == 'pari' && sumEnd ) || (choiceUt == 'dispari' && !sumEnd)){
+     //   document.getElementById('titolo')
+     //   titolo.innerHTML = 'hai vinto';
+     //  console.log('hai vinto');
+     // }else{
+     //   document.getElementById('titolo')
+     //   titolo.innerHTML = 'hai perso';
+     //  console.log('hai perso');
+     // }
+     // console.log(sum);
 
  </script>
   </body>
